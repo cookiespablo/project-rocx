@@ -1,0 +1,9 @@
+.card-model {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.card-model-sm {
+	max-width: 600px;
+}
+
