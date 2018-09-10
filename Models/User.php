@@ -97,12 +97,13 @@ class User extends Model
         $user->firstname = $form['firstname'];
         $user->lastname = $form['lastname'];
         $user->save();
-        if($user->getId()) {
-            App::setLoggedInUser($user);
-            return $user;
-        } else {
-            return false;
-        }
+        // Since admin creates new users, we dont need to login as the new user.
+        // if($user->getId()) {
+        //     App::setLoggedInUser($user);
+        //     return $user;
+        // } else {
+        //     return false;
+        // }
     }
 
 

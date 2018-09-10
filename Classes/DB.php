@@ -8,8 +8,8 @@ class DB
     //login credentials:
     private $servername = "localhost";
     private $username = "root";
-    private $password = "root";
-    private $database = "sjonframework";
+    private $password = "";
+    private $database = "project-rocx";
 
     private $existingTables = [];
 
